@@ -433,7 +433,8 @@ bool downloadFileToDisk(char * url, char*out, wchar_t * sCurrentInfoText, bool &
 	}
 
 	ptr = strcasestr(downloadBuffer, "content-length:");
-	if (!ptr) {
+	if (!ptr) 
+	{
 		return -1;
 	}
 
