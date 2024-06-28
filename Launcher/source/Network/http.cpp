@@ -193,7 +193,8 @@ int downloadFileToBuffer(char * url, char ** buffer, wchar_t * sCurrentInfoText,
 	}
 
 	ptr = strcasestr(downloadBuffer, "content-length:");
-	if (!ptr) {
+	if (!ptr) 
+	{
 		return -1;
 	}
 
