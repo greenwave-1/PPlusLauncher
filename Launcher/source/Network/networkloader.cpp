@@ -134,7 +134,8 @@ void * networkThreadFunction()
 			else
 			{
 				cur = cur->FirstChildElement("news");
-				if (!cur) {
+				if (!cur) 
+				{
 					failed = true;
 					swprintf(newsText, 4096, L"Failed to parse news...");
 				}
